@@ -5,15 +5,37 @@
     "workspaceFolder": "/workspace",
     "updateRemoteUserUID": false,
     "overrideCommand": true,
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/mikaello/devcontainer-features/modern-shell-utils:1": {},
+    },   
+
     "customizations": {
         "vscode": {
             "extensions": [
                 "ms-python.python",
                 "ms-python.pylint",
-                "ms-python.black-formatter"
+                "ms-python.black-formatter",
+                "mhutchie.git-graph",
+		        "eamodio.gitlens",
+                "github.vscode-github-actions",
+                "timonwong.shellcheck",
+		        "robertz.code-snapshot",
+                "ms-azuretools.vscode-docker",
 
             ],
             "settings": {
+                "editor.tabSize": 4,
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                      "path": "bash",
+                      "icon": "terminal-bash"
+                    },
+                    "zsh": {
+                      "path": "zsh"
+                    }
+                },
                 "[python]": {
                     "editor.formatOnSave": true,
                     "editor.defaultFormatter": "ms-python.black-formatter",

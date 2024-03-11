@@ -6,3 +6,6 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
       - .:/workspace
+      - devcontainer-bashhistory:/commandhistory
+volumes:
+  devcontainer-bashhistory:
