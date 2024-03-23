@@ -6,8 +6,9 @@
     "updateRemoteUserUID": false,
     "overrideCommand": true,
     "features": {
-        "ghcr.io/devcontainers/features/github-cli:1": {},
-        "ghcr.io/mikaello/devcontainer-features/modern-shell-utils:1": {},
+        // "ghcr.io/devcontainers/features/github-cli:1": {},
+        // "ghcr.io/mikaello/devcontainer-features/modern-shell-utils:1": {},
+        "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {"plugins": ["zsh-autosuggestions", "zsh-syntax-highlighting"]}
     },   
 
     "customizations": {
